@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <title>
+        My family book
+    </title>
+    <body>
+        <h1>
+            My family book
+        </h1>
+        <img src="FB1.jpg" id="family_img">
+        <h3 id=one> our family book</h3>
+        <button onclick="family()">Next</button>
+        <script>
+            var names=[
+          "2. My father (Amit Singh)",
+          "3. My mother (Sangeeta Singh)",
+          "4. My sister (Divisha Singh)",
+          "5. Me (Dhairya Singh)"       
+            ];
+
+            var images=[
+                "https://i.pinimg.com/originals/87/b8/3b/87b83ba77a10a1d3313ed7872918524d.jpg",
+                "https://th.bing.com/th/id/OIP.qNJjxHckBg-cLtWhpTIyEgHaOC?pid=ImgDet&rs=1",
+                "https://thumbs.dreamstime.com/z/sister-portrait-pretty-teenage-girl-schoolgirl-long-brown-hair-satchel-bag-school-uniform-skirt-blouse-daughter-86364433.jpg",
+                "https://th.bing.com/th/id/R.f0754063b006627cc4bdcf8cd07a5a61?rik=tsy36oNL1i3xvA&riu=http%3a%2f%2f4.bp.blogspot.com%2f_nVR8XpMkrhk%2fTScGTk90NXI%2fAAAAAAAAAEk%2ffba5kASkP3g%2fs1600%2fAUDIENCE.jpg&ehk=OLsWSjQPnl5asZoy2ElumJg%2bCYOgV%2fXblJ6tUfARQ68%3d&risl=&pid=ImgRaw&r=0"
+            ];
+
+            var i=0;
+            function family(){
+           document.getElementById("one").innerHTML=names[i];
+           document.getElementById("family_img").src=images[i];
+           i++
+           if(i==4){
+               i=0
+           }
+            }
+            
+        </script>
+    </body>
+</html>
